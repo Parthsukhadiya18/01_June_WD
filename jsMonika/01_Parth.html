@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="Input1">
+    <input type="number" name="" id="Input2">
+    <input type="number" name="" id="Input3">
+    <button id="btn">Check</button>
+    <p id="para"></p>
+    <script>
+        let  N1 = document.getElementById("Input1");
+        let  N2 = document.getElementById("Input2");
+        let  N3 = document.getElementById("Input3");
+
+        let  btn = document.getElementById("btn");
+        let  para = document.getElementById("para");
+
+        btn.addEventListener("click",function () {
+        //   console.log("hi");  
+       
+          if(Number(N1.value)<Number(N3.value) && Number(N2.value)<Number(N3.value)){
+        //    console.log("Input2 is max");
+        //    para.innerHTML="Input2 is max"
+           para.innerHTML="Input3 is max"
+           
+          }
+          else if(Number(N1.value)<Number(N2.value) && Number(N3.value)<Number(N2.value)){
+        //    console.log("Input1 is max");
+        //    para.innerHTML="Input1 is max"
+           para.innerHTML="Input2 is max"
+
+          }
+          else if(Number(N2.value)<Number(N1.value) && Number(N3.value)<Number(N1.value)){
+        //    console.log("Input1 is max");
+        //    para.innerHTML="Input1 is max"
+           para.innerHTML="Input1 is max"
+
+          }
+          else{
+            console.log("ALL are same");
+            para.innerHTML="ALL are max"
+          }
+        })
+
+
+
+
+
+    </script>
+
+</body>
+</html>

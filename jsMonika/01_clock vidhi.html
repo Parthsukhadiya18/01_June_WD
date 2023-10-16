@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Time Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        #clock {
+            font-size: 2rem;
+        }
+        #date {
+            font-size: 1.5rem;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date and Time Display</h1>
+      <div id="date"></div>
+    <div id="clock"></div>
+  
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const dateFormatted = now.toLocaleDateString(undefined, options);
+            const timeString = now.toLocaleTimeString();
+
+            document.getElementById("clock").textContent = timeString;
+            document.getElementById("date").textContent = dateFormatted;
+        }
+
+        // Update the clock and date immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>

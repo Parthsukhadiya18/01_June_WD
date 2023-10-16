@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <button onclick="alert('hi')">SHam</button>
+    <button id="btn">save</button>
+    <button id="resave">Resave</button>
+
+    <p id="para">HEllo Parth</p>
+
+    <script>
+        let btn = document.getElementById("btn")
+        let para = document.getElementById("para")
+        let resave = document.getElementById("resave")
+
+
+        btn.addEventListener("click",function() {
+            // console.log("hi");
+            para.innerHTML = "<h1>Hello Vidhi</h1>"
+            
+            // para.innerText = "<h1>Hello Vidhi</h1>"
+        })
+        resave.addEventListener("click",function() {
+            console.log("hi");
+            para.innerHTML = "Hello Vidhi"
+            // para.innerText = "<h1>Hello Vidhi</h1>"
+        })
+
+    </script>
+</body>
+</html>

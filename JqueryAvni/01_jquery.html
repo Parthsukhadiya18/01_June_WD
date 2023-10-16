@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- cdn jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <!-- jQuery is a JavaScript Library. -->
+  <!-- jQuery greatly simplifies JavaScript programming. -->
+  <!-- jQuery is easy to learn. -->
+
+
+  <!-- selector id  # rollnumber
+   selector   class . color 
+    selector   element  p -->
+
+    <!-- click event  click dbclike hover mouserenetr mouseout   -->
+</head>
+<body>
+  <button id="Sham">Sham</button>
+
+  <button class="Parth">Parth</button>
+
+
+  <h1>Earth</h1>
+  <script>
+    $(document).ready(function() {
+        //  console.log("hi");
+        // id selector # 
+         $("#Sham").click(function() {
+              console.log("Sham");
+         })
+
+        //  class selector  .
+
+        $(".Parth").click(function () {
+            console.log("Earth");
+        })
+// element selector tag 
+          $("h1").click(function () {
+            console.log("Hi");
+        })
+    })
+  </script>
+  
+</body>
+</html>
