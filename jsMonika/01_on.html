@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <button id="on">On</button>
+    <img src="download.jfif" alt="" id="img">
+    <button id="off">Off</button>
+    <script>
+        let on = document.getElementById("on")
+        let off = document.getElementById("off")
+        let img = document.getElementById("img")
+
+        on.addEventListener("click",function () {
+            // console.log("hi");
+            img.src="download.png";
+        })
+        off.addEventListener("click",function () {
+            // console.log("hi");
+            img.src="download.jfif";
+        })
+
+
+    </script>
+</body>
+</html>

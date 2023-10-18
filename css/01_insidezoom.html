@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;  
+            /* clip the excess when child gets bigger than parent */
+}
+#container img {
+  display: block;
+  transition: transform .4s;   /* smoother zoom */
+}
+#container:hover img {
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+    <img id="image" src="https://images.pexels.com/photos/15265573/pexels-photo-15265573/free-photo-of-woman-in-pink-clothes.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load">
+</div>
+</body>
+</html>
