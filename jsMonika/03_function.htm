@@ -21,17 +21,20 @@
     <p id="parth"></p>
 
     <button onclick="saveme()">Save me</button>
-    <button onclick="console.log(user('bhavesh','audi','q9'))">Save me</button>
+       <button onclick="saveme()">Parth</button>
+    <button onclick="user('bhavesh')">Avni</button>
     <button onclick="parth()">Param</button>
-    <p id="p1"></p>
+    <button onclick="myFunction(12,12)">Vivek</button>
+    <p id="parth"></p>
     <script>
         function saveme() {
             alert("hello parth I am alexa");
             document.write("PARTH PATEL ")
         }
         // option
-        function user(name,car,model) {
-            return `This is  ${name} that is my ${car} this is model number ${model}`;
+        function user(name) {
+            console.log(name);
+            return `This is  ${name}}`;
 
         }
         // console.log(user("parth"))
@@ -43,6 +46,11 @@
             // alert(a+b)
             // return 0 
         }
+
+
+           let myFunction = (a, b) =>  console.log( a * b);
+
+         
          
         // arrow function 
         setTimeout(() => {

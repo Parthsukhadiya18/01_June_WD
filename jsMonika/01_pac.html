@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+      <h1>form make add</h1>
+     Input1:
+      <input type="number" id="input1">
+      <br><br>
+       Input2:
+      <input type="number" id="input2">
+
+<br><br>
+      <button id="sub">-</button>
+
+      <p id="para"></p>
+  <script>
+     let input1 = document.getElementById("input1");
+       let input2 = document.getElementById("input2");
+        let sub = document.getElementById("sub")
+
+        sub.addEventListener("click",function () {
+              let ans= input1.value - input2.value;
+              console.log(ans);
+              document.getElementById("para").innerHTML=ans;
+        })
+
+
+  </script>
+</body>
+</html>
